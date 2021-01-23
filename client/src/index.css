@@ -11,3 +11,36 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+#header {
+  background: #ccc;
+  height: 100px;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+#nav {
+  width: 230px;
+  background: #eee;
+}
+
+#content {
+  margin-left: 230px; /* Same as 'nav' width */
+}
+
+#footer {
+  clear: left;
+  width: 100%;
+  background: #ccc;
+  text-align: center;
+  padding: 4px 0;
+}
+
+.innertube {
+  margin: 15px; /* Padding for content */
+  margin-top: 0;
+}
