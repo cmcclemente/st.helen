@@ -17,6 +17,10 @@ code {
   height: 100px;
 }
 
+#searchBar {
+  margin-left: 415px; /* Same as 'nav' width */
+}
+
 main {
   display: flex;
   flex-wrap: wrap;
