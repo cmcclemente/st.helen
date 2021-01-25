@@ -17,6 +17,19 @@ code {
   height: 100px;
 }
 
+#signin{
+  float:right;
+  display:flex;
+}
+
+.container{
+  display:flex;
+  justify-content: space-between;
+
+}
+
+
+
 #searchBar {
   margin-left: 415px; /* Same as 'nav' width */
 }
