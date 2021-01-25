@@ -28,10 +28,19 @@ code {
 
 }
 
+.center{
+  margin:auto;
+  width: 20%;
+  display:flex;
+  padding: 1.5%;
+  justify-content: space-between;
+}
+
 
 
 #searchBar {
   margin-left: 415px; /* Same as 'nav' width */
+  
 }
 
 main {
@@ -60,4 +69,24 @@ main {
 .innertube {
   margin: 15px; /* Padding for content */
   margin-top: 0;
+}
+/*float to the middle*/
+.cancelbtn, .signupbtn {
+  float: left;
+  width: 50%;
+}
+
+/*make cancel button red*/
+.cancelbtn {
+  padding: 14px 20px;
+  background-color: #f44336;
+}
+
+/*border for forums like signup*/
+#border {
+  
+  padding-top:60px;
+  background-color: lightblue;
+  
+  
 }

@@ -15,6 +15,7 @@ function App() {
       <span>
         <SearchBar/>
       </span>
+      
     <BrowserRouter>
       <Switch>
         <Route exact path="/">
@@ -22,7 +23,7 @@ function App() {
             
             <Header />
               <Main />
-            <Footer />
+           
           </div>
         </Route>
         <Route
@@ -33,6 +34,9 @@ function App() {
           } />
       </Switch>
     </BrowserRouter>
+    
+        <Footer/>
+      
     </div>
   );
 }
