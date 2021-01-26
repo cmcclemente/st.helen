@@ -1,6 +1,6 @@
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 
-
+import Login from './components/LoginBar';
 import Header from './components/Header';
 import Main from './components/Main';
 import Footer from './components/Footer';
@@ -31,6 +31,18 @@ function App() {
           render={(props) =>
             <SignUp />
           } />
+
+           
+          
+          <Route  exact path="/login"
+          render={(props) =>
+            <Login />}
+          >
+            
+
+          </Route>
+      
+          
       </Switch>
     </BrowserRouter>
     </div>
