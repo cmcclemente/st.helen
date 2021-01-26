@@ -7,6 +7,7 @@ import Footer from './components/Footer';
 import SearchBar from './components/SearchBar';
 import SignUp from './components/SignUp';
 import React from 'react';
+import About from './components/About';
 
 
 function App() {
@@ -40,8 +41,14 @@ function App() {
           >
             
 
+          </Route>  
+        <Route  exact path="/about"
+          render={(props) =>
+            <About />}
+          >
+            
+
           </Route>
-      
           
       </Switch>
     </BrowserRouter>
