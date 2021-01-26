@@ -7,6 +7,11 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
@@ -35,19 +40,18 @@ code {
 }
 
 .row{
-    height:1000px;
-    width:1410px;
+    height:900px;
+    width:940px;
     background-color:aqua;
-/*    display:block;*/
+
     margin:0 auto;
 }
 
 main {
     display: flex;
     flex-wrap: wrap;
-    padding: 20px;
     display:block;
-    box-sizing:border-box;
+    margin:0 auto;
 }
 
 
@@ -57,8 +61,15 @@ main {
 }
 
 #content {
-    margin-left: 230px; /* Same as 'nav' width */
-    background-color:green;
+    width: 580px;
+    background: #2175fc;
+    height: 800px;
+    float: right;
+    padding: 10px;
+    text-align: justify;
+    padding:10px;
+    margin-top:5px;
+    margin-right:5px;
 }
 
 #footer {
@@ -69,10 +80,15 @@ main {
   padding: 4px 0;
 }
 
+
 .innertube {
-    padding-left: 15px; /* Padding for content */
-    margin-top: 0;
-    /* background-color:brown; */
+    float:left;
+    width: 340px;
+    background: #2175fc;
+    padding: 10px;    
+    margin-top:5px;
+    margin-left:5px;
+    height: 800px;
 }
 
 .foot {
@@ -86,6 +102,7 @@ main {
 .foot ul{
     width: 1000px;
     display:block;
+    margin:0 auto;
 }
 
 .foot li{
