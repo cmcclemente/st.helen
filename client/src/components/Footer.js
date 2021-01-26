@@ -1,9 +1,13 @@
 const Footer = () => {
     return (
-        <footer id="footer">
-			<div className="innertube">
-				<p>Footer</p>
-			</div>
+        <footer class="foot">
+			<ul>
+                <li>Facebook</li>
+                <li>Instagram</li>
+                <li>Twitter</li>
+                <li>Pintrest</li>
+            </ul>
+			
 		</footer>
     )
 }

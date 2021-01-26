@@ -17,8 +17,8 @@ const SearchBar = ({keyword,setKeyword}) => {
 
   
     <a href="/Signup">Sign-up</a>
-    <span>Log-in</span>
-    <span>About us</span>
+    <a href="/login">Log-in</a>
+    <a href="/about">About-us</a>
     </span>
   );
 }
