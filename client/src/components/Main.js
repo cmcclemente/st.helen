@@ -1,6 +1,6 @@
 const Main = () => {
     return (
-        <main>
+        <div className="row"><main>
             <nav id="nav">
                 <div className="innertube">
                     <h3>Left Navigation</h3>
@@ -12,6 +12,7 @@ const Main = () => {
                 </div>
             </div>
         </main>
+        </div>
     )
 }
 
