@@ -8,6 +8,7 @@ import SearchBar from './components/SearchBar';
 import SignUp from './components/SignUp';
 import React from 'react';
 import About from './components/About';
+import ProductPage from './components/ProductPage'
 
 
 function App() {
@@ -22,7 +23,10 @@ function App() {
           <div className="App">
             
             <Header />
-              <Main />
+              <Main
+              
+              
+              />
             <Footer />
           </div>
         </Route>
@@ -46,9 +50,14 @@ function App() {
           render={(props) =>
             <About />}
           >
-            
-
           </Route>
+
+          <Route
+          exact
+          path="/ProductPage"
+          render={(props) =>
+            <ProductPage />
+          } />
           
       </Switch>
     </BrowserRouter>
