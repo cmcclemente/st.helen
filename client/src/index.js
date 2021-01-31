@@ -2,6 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import './signup.css';
+import './Main.css';
+import './ProductPage.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
