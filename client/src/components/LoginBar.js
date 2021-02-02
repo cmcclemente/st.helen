@@ -1,8 +1,7 @@
 import React from 'react';
-import './LoginStyle.css'
+import './LoginStyle.css';
 
 const LoginBar = () => {
-
   return (
     <div className="login-wrapper">
       <form>
@@ -18,10 +17,8 @@ const LoginBar = () => {
           <button type="submit">Log In</button>
         </div>
       </form>
-
     </div>
-    
-  );
+  )
 }
 
 export default LoginBar

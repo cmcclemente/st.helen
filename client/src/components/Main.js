@@ -1,3 +1,5 @@
+import React from 'react';
+
 const Main = () => {
     return (
         <div className="row"><main>
@@ -7,9 +9,7 @@ const Main = () => {
                 </aside>
             </nav>
             <div id="content">
-                
-                    <h1>Content</h1>
-                
+                <h1>Content</h1>
             </div>
         </main>
         </div>
