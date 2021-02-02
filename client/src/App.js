@@ -14,53 +14,45 @@ import ProductPage from './components/ProductPage'
 function App() {
   return (
     <div>
+
       <span>
-        <SearchBar/>
+        <SearchBar />
       </span>
-    <BrowserRouter>
-      <Switch>
-        <Route exact path="/">
-          <div className="App">
-            
-            <Header />
-              <Main
-              
-              
-              />
-            <Footer />
-          </div>
-        </Route>
-        <Route
-          exact
-          path="/signup"
-          render={(props) =>
-            <SignUp />
-          } />
-
-           
+      <BrowserRouter>
+        <Switch>
           
-          <Route  exact path="/login"
-          render={(props) =>
-            <Login />}
-          >
-            
+          <Route exact path="/">
+            <div className="App">
 
-          </Route>  
-        <Route  exact path="/about"
-          render={(props) =>
-            <About />}
-          >
+              <Header />
+              <Main />
+              <Footer />
+            </div>
           </Route>
 
-          <Route
-          exact
-          path="/ProductPage"
-          render={(props) =>
-            <ProductPage />
-          } />
-          
-      </Switch>
-    </BrowserRouter>
+          <Route exact path="/signup"
+            render={(props) =>
+              <SignUp />
+            } />
+
+          <Route exact path="/login"
+            render={(props) =>
+              <Login />
+            } />
+
+          <Route exact path="/about"
+            render={(props) =>
+              <About />
+            } />
+
+
+          <Route exact path="/ProductPage"
+            render={(props) =>
+              <ProductPage />
+            } />
+
+        </Switch>
+      </BrowserRouter>
     </div>
   );
 }
