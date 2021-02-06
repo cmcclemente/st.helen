@@ -9,7 +9,7 @@ const ProductPage = () => {
 
         <form >
            <body>
-                <h2 class="center">Product Card</h2>
+                <h2 class="center">The Product you looked UP!!</h2>
                 <div class="card">
                     <img src="https://media.wired.com/photos/5c9040ee4950d24718d6da99/16:9/w_2400,h_1350,c_limit/shoppingcart-1066110386.jpg" alt="this product" width="100%"/>
                     <h1>An item we are Selling :)</h1>

@@ -8,7 +8,8 @@ import SearchBar from './components/SearchBar';
 import SignUp from './components/SignUp';
 import React from 'react';
 import About from './components/About';
-import ProductPage from './components/ProductPage'
+import ProductPage from './components/ProductPage';
+import ChatPage from './components/ChatPage';
 
 
 function App() {
@@ -57,6 +58,13 @@ function App() {
           path="/ProductPage"
           render={(props) =>
             <ProductPage />
+          } />
+
+<Route
+          exact
+          path="/ChatPage"
+          render={(props) =>
+            <ChatPage />
           } />
           
       </Switch>
