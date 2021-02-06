@@ -4,6 +4,8 @@ import './index.css';
 import './signup.css';
 import './Main.css';
 import './ProductPage.css';
+import './ChatPage.css';
+
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
