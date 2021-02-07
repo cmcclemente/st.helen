@@ -4,6 +4,8 @@ const port = 5000;
 
 
 const productRouter = require('./routes/productRouter');
+const profileRouter = require('./routes/profileRouter');
+const transactionRouter = require('./routes/transactionRouter');
 
 const logger = (req,res,next)=>{
     console.log(req.method + ' '+ req.url);
@@ -12,6 +14,8 @@ const logger = (req,res,next)=>{
 
 app.use(logger,express.json());
 app.use('/api/v1/products', productRouter);
+app.use('/api/v1/profiles', profileRouter);
+app.use('/api/v1/transactions', transactionRouter);
 
 /*app.get('/', (request, response) => {
     response.send("Hello World!");
