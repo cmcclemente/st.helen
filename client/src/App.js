@@ -11,6 +11,7 @@ import About from './components/About';
 import ProductPage from './components/ProductPage'
 
 
+
 function App() {
   return (
     <div>
@@ -45,11 +46,12 @@ function App() {
               <About />
             } />
 
-
           <Route exact path="/ProductPage"
             render={(props) =>
               <ProductPage />
             } />
+
+          
 
         </Switch>
       </BrowserRouter>

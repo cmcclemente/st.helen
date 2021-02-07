@@ -1,12 +1,7 @@
 import React from 'react';
 
-
-
 const SignUp = () => {
     return (
-        
-
-
         <form >
             <header className="center">
                 <img src="https://freepngimg.com/thumb/web_design/24804-7-sign-up-button-transparent-background.png" alt="Sign Up logo" width="150" height="55"/>
@@ -25,17 +20,10 @@ const SignUp = () => {
                 <input type="text" placeholder="confirm password" name="psw-confirm" required/>
                 </div>
                 <div className="center">
-    
                     <button type="button" className="cancelbtn">Cancel</button>
                     <button type="submit" className="signupbtn">Sign Up</button>
-                
             </div>
             </body>
-            
-            
-
-
-            
         </form>
     )
 }

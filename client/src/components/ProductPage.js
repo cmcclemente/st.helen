@@ -1,12 +1,6 @@
 import React from 'react';
-
-
-
 const ProductPage = () => {
     return (
-        
-
-
         <form >
            <body>
                 <h2 className="center">Product Card</h2>
@@ -18,15 +12,7 @@ const ProductPage = () => {
                     <p><button>Add to Cart</button></p>
 
                 </div>
-
-
-
             </body>
-            
-            
-
-
-            
         </form>
     )
 }
