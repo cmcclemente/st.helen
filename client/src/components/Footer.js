@@ -1,6 +1,6 @@
 const Footer = () => {
     return (
-        <footer class="foot">
+        <footer className="foot">
 			<ul>
                 <li>Facebook</li>
                 <li>Instagram</li>
