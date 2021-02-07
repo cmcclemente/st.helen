@@ -2,7 +2,7 @@ const express = require('express');
 const profileRouter = express.Router();
 const profileData = require('../data/profileData');
 
-productsRouter.route('/')
+profileRouter.route('/')
 .get((req, res, next) => {
     res.json(profileData.profiles);
 })
