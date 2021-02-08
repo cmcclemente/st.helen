@@ -15,7 +15,7 @@ const SearchBar = ({ keyword, setKeyword }) => {
       <a href="/login">Log-in</a>
       <a href="/ChatPage">Chat with Team</a>
       <a href="/about">About-us</a>
-      <a href="/profile">Profile</a>
+      <a href="/UserAdmin">User-Control</a>
     </span>
   );
 }

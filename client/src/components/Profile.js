@@ -1,30 +1,21 @@
-import React, { Component } from 'react';
-import './Profile.css'
+import React from 'react';
+import './Profile.css';
 
-export default class Profile extends Component {
-    render() {
-        return (
-            <div>
-                <div className="item">
-                    <img src="https://t4.ftcdn.net/jpg/03/46/93/61/360_F_346936114_RaxE6OQogebgAWTalE1myseY1Hbb5qPM.jpg" alt="this product" width="25%" />
-                    <span className="caption">Jane Doe</span>
+const Profile = () => {
+    return (
+        <form >
+           <body>
+                <div className="card">
+                    <img src="https://t4.ftcdn.net/jpg/03/46/93/61/360_F_346936114_RaxE6OQogebgAWTalE1myseY1Hbb5qPM.jpg" alt="User Profile" width="100%"/>
+                    <h1>User Name</h1>
+                    <p className="price">Items Sold:  <br />Purchases: </p>
+                    <p>The Users Bio if they choose to have one</p>
+                    <p><button>Report(for removeal)</button></p>
                 </div>
-
-                <div className="item">
-                    <ul>
-                        <li>Items Sold: 4 </li>
-                        <li>Purchases: 2</li>
-                    </ul>
-                </div>
-
-                <div>
-                    <br />
-                    Loction place holder
-                </div>
-
-            </div>
-        );
-    }
+            </body>
+        </form>
+    )
 }
 
+export default Profile
 

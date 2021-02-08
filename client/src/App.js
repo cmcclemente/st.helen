@@ -11,6 +11,7 @@ import About from './components/About';
 import Profile from './components/Profile';
 import ProductPage from './components/ProductPage';
 import ChatPage from './components/ChatPage';
+import UserAdmin from './components/UserAdmin';
 
 
 function App() {
@@ -25,11 +26,9 @@ function App() {
             <div className="App">
 
               <Header />
-              <Main
-
-
-              />
+              <Main />
               <Footer />
+
             </div>
           </Route>
           <Route
@@ -40,6 +39,11 @@ function App() {
             } />
 
 
+
+          <Route exact path="/UserAdmin"
+            render={(props) =>
+              <UserAdmin />}
+          />
 
           <Route exact path="/login"
             render={(props) =>
