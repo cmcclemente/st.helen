@@ -84,8 +84,6 @@ const Main = () => {
                         <div className="desc">This is the discription part!!</div>
                     </div>
                 </div>
-
-
             </div>
         </main>
         </div>

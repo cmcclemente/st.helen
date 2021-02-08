@@ -1,0 +1,16 @@
+img{
+    border-radius: 50%;
+    border: 1px solid #021a40;
+    width: 100px;
+    height: 100px;
+    background-color: grey;
+}
+div.item {
+    vertical-align: top;
+    text-align: center;
+    width: 120px;
+}
+.caption {
+    display: block;
+    font-size: 25px;
+}
