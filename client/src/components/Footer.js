@@ -5,9 +5,8 @@ const Footer = () => {
                 <li>Facebook</li>
                 <li>Instagram</li>
                 <li>Twitter</li>
-                <li>Pintrest</li>
+                <li>Pinterest</li>
             </ul>
-			
 		</footer>
     )
 }
