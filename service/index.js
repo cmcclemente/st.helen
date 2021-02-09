@@ -1,6 +1,7 @@
 const express = require('express');
 const app = express();
 const port = 5000;
+const cors = require('cors');
 
 
 const productRouter = require('./routes/productRouter');
@@ -13,6 +14,7 @@ const logger = (req,res,next)=>{
 }
 
 app.use(logger,express.json());
+app.use(cors());
 app.use('/api/v1/products', productRouter);
 app.use('/api/v1/profiles', profileRouter);
 app.use('/api/v1/transactions', transactionRouter);

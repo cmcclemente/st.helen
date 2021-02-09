@@ -58,7 +58,7 @@ function App() {
 
           <Route
             exact
-            path="/ProductPage"
+            path="/ProductPage/:id"
             render={(props) =>
               <ProductPage />
             } />

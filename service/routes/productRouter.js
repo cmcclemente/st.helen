@@ -5,7 +5,7 @@ const mockData = require('../data/mockData');
 
 productsRouter.route('/')
 .get((req, res, next) => {
-    res.json(mockData.productList);
+    res.send(mockData.productList);
 })
 .post((req, res, next) => {
     next("An error");
