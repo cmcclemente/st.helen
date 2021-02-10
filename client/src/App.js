@@ -12,6 +12,7 @@ import Profile from './components/Profile';
 import ProductPage from './components/ProductPage';
 import ChatPage from './components/ChatPage';
 import UserAdmin from './components/UserAdmin';
+import UploadProduct from './components/UploadProduct';
 
 
 function App() {
@@ -37,7 +38,10 @@ function App() {
             render={(props) =>
               <SignUp />
             } />
-
+          <Route exact path="/UploadProduct"
+            render={(props) =>
+              <UploadProduct />}
+          />
 
 
           <Route exact path="/UserAdmin"
