@@ -8,67 +8,77 @@ import SearchBar from './components/SearchBar';
 import SignUp from './components/SignUp';
 import React from 'react';
 import About from './components/About';
+import Profile from './components/Profile';
 import ProductPage from './components/ProductPage';
 import ChatPage from './components/ChatPage';
+import UserAdmin from './components/UserAdmin';
+import UploadProduct from './components/UploadProduct';
 
 
 function App() {
   return (
     <div>
       <span>
-        <SearchBar/>
+        <SearchBar />
       </span>
-    <BrowserRouter>
-      <Switch>
-        <Route exact path="/">
-          <div className="App">
-            
-            <Header />
-              <Main
-              
-              
-              />
-            <Footer />
-          </div>
-        </Route>
-        <Route
-          exact
-          path="/signup"
-          render={(props) =>
-            <SignUp />
-          } />
+      <BrowserRouter>
+        <Switch>
+          <Route exact path="/">
+            <div className="App">
 
-           
-          
-          <Route  exact path="/login"
-          render={(props) =>
-            <Login />}
-          >
-            
+              <Header />
+              <Main />
+              <Footer />
 
-          </Route>  
-        <Route  exact path="/about"
-          render={(props) =>
-            <About />}
-          >
+            </div>
           </Route>
+          <Route
+            exact
+            path="/signup"
+            render={(props) =>
+              <SignUp />
+            } />
+          <Route exact path="/UploadProduct"
+            render={(props) =>
+              <UploadProduct />}
+          />
+
+
+          <Route exact path="/UserAdmin"
+            render={(props) =>
+              <UserAdmin />}
+          />
+
+          <Route exact path="/login"
+            render={(props) =>
+              <Login />}
+          />
+
+          <Route exact path="/about"
+            render={(props) =>
+              <About />}
+          />
+
+          <Route exact path="/profile"
+            render={(props) =>
+              <Profile />}
+          />
 
           <Route
-          exact
-          path="/ProductPage"
-          render={(props) =>
-            <ProductPage />
-          } />
+            exact
+            path="/ProductPage/:id"
+            render={(props) =>
+              <ProductPage />
+            } />
 
-<Route
-          exact
-          path="/ChatPage"
-          render={(props) =>
-            <ChatPage />
-          } />
-          
-      </Switch>
-    </BrowserRouter>
+          <Route
+            exact
+            path="/ChatPage"
+            render={(props) =>
+              <ChatPage />
+            } />
+        </Switch>
+      </BrowserRouter>
     </div>
   );
 }

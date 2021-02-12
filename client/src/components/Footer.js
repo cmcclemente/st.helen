@@ -1,13 +1,12 @@
 const Footer = () => {
     return (
-        <footer class="foot">
+        <footer className="foot">
 			<ul>
                 <li>Facebook</li>
                 <li>Instagram</li>
                 <li>Twitter</li>
-                <li>Pintrest</li>
+                <li>Pinterest</li>
             </ul>
-			
 		</footer>
     )
 }

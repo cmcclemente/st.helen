@@ -18,9 +18,7 @@ const LoginBar = () => {
           <button type="submit">Log In</button>
         </div>
       </form>
-
     </div>
-    
   );
 }
 
