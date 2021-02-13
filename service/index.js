@@ -16,6 +16,7 @@ const logger = (req, res, next) => {
     return next();
 }
 
+//Test connection
 MongoClient.connect(keys.mongoURI, (err, client) => {
     if (err) {
         throw err;
