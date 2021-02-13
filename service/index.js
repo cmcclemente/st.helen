@@ -3,20 +3,20 @@ const app = express();
 const port = 5000;
 const cors = require('cors');
 const { MongoClient } = require('mongodb');
+const keys = require('./config/keys');
 
 
 const productRouter = require('./routes/productRouter');
 const profileRouter = require('./routes/profileRouter');
 const transactionRouter = require('./routes/transactionRouter');
 
-const mongoURI = 'mongodb+srv://dbAdmin:gTjdXeMCRJTAuiiA@st-helens.prav3.mongodb.net?retryWrites=true&w=majority';
 
 const logger = (req, res, next) => {
     console.log(req.method + ' ' + req.url);
     return next();
 }
 
-MongoClient.connect(mongoURI, (err, client) => {
+MongoClient.connect(keys.mongoURI, (err, client) => {
     if (err) {
         throw err;
     }
