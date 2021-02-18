@@ -60,8 +60,7 @@ function App() {
           />
 
           <ProtectedRoute exact path="/profile"
-            render={(props) =>
-              <Profile />}
+            component={Profile}
           />
 
           <Route
