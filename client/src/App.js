@@ -1,5 +1,5 @@
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
-
+import AuthNav from "./components/auth-nav";
 import Login from './components/LoginBar';
 import Header from './components/Header';
 import Main from './components/Main';
@@ -13,7 +13,7 @@ import ProductPage from './components/ProductPage';
 import ChatPage from './components/ChatPage';
 import UserAdmin from './components/UserAdmin';
 import UploadProduct from './components/UploadProduct';
-
+import ProtectedRoute from './auth/protected-route';
 
 function App() {
   return (
@@ -59,7 +59,7 @@ function App() {
               <About />}
           />
 
-          <Route exact path="/profile"
+          <ProtectedRoute exact path="/profile"
             render={(props) =>
               <Profile />}
           />
@@ -77,8 +77,11 @@ function App() {
             render={(props) =>
               <ChatPage />
             } />
+            
         </Switch>
+        
       </BrowserRouter>
+      <AuthNav />
     </div>
   );
 }
