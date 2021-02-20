@@ -38,14 +38,6 @@ app.use('/api/v1/products', productRouter);
 app.use('/api/v1/profiles', profileRouter);
 app.use('/api/v1/transactions', transactionRouter);
 
-/*app.get('/', (request, response) => {
-    response.send("Hello World!");
-});*/
-
-/*app.get('/api/v1/products', productRouter);*/
-
 app.listen(port, () => {
     console.log(`Server started on port ${port}...`);
-
-
 })
