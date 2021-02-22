@@ -5,17 +5,16 @@ import {
   CardContent,
   makeStyles,
 } from "@material-ui/core";
-import { Link } from 'react-router-dom';
 
 const useStyles = makeStyles((theme) => ({
   root: {
     padding: '0',
-    background: 'yellow',
+    background: 'green',
     display:'block',
   },
 }));
 
-export default function Product(props) {
+export default function ProductView(props) {
   const classes = useStyles();
   return (
     <Card className={classes.root}>
@@ -23,7 +22,7 @@ export default function Product(props) {
         <CardContent>
           <h2>{props.product.name}</h2>
           <p>{props.product.price}</p>
-          <Link to={`/ProductPage/${props.product.id}`}>View Item</Link>
+         
         </CardContent>
       </CardActionArea>
     </Card>

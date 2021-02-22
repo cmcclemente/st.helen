@@ -18,4 +18,17 @@ productsRouter.route('/')
 });
     });
 
+productsRouter.route('/:id')
+  .get((req, res, next) => {
+    Product.findOne({id:req.params.id}, (err, product) => {
+      if (err) {
+        next(err);
+      } else if (product) {
+        res.send(product);
+      } else {
+        res.sendStatus(404);
+      }
+    });
+  });
+
 module.exports = productsRouter;

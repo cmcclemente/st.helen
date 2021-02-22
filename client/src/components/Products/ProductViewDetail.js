@@ -2,11 +2,11 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { useParams } from 'react-router-dom';
 
-import Product from './Product';
+import ProductView from './Product';
 
-export default function ProductDetail(props) {
+export default function ProductViewDetail(props) {
     const { id } = useParams();
-    const [ product, setProduct ] = useState(null);
+    const [ product, setProductView ] = useState(null);
     console.log('k'+id);
   useEffect(() => {
     const config = {
@@ -15,14 +15,14 @@ export default function ProductDetail(props) {
       headers: { "Content-Type": "application/json" },
     }
     axios(config).then((response) => {
-      setProduct(response.data)
+      setProductView(response.data)
     }).catch((err) => {
-      console.log('error in ProductDetail useEffect');
+      console.log('error in ProductViewDetail useEffect');
     })
   }, [id]);
 
     if (product) {
-      return <Product product={product} />;
+      return <ProductView product={product} />;
     }
     return <div>Loading...</div>;
 }
