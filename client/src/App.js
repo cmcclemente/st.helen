@@ -7,7 +7,7 @@ import SearchBar from './components/SearchBar';
 import React from 'react';
 import About from './components/About';
 import Profile from './components/Profile';
-import ProductPage from './components/ProductPage';
+import ProductDetail from './components/Products/ProductDetail';
 import ChatPage from './components/ChatPage';
 import UserAdmin from './components/UserAdmin';
 import UploadProduct from './components/UploadProduct';
@@ -55,7 +55,7 @@ function App() {
             exact
             path="/ProductPage/:id"
             render={(props) =>
-              <ProductPage />
+              <ProductDetail />
             } />
 
           <Route
