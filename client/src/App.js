@@ -9,7 +9,6 @@ import SignUp from './components/SignUp';
 import React from 'react';
 import About from './components/About';
 import Profile from './components/Profile';
-import ProductViewDetail from './components/Products/ProductViewDetail';
 import ProductDetail from './components/Products/ProductDetail';
 import ChatPage from './components/ChatPage';
 import UserAdmin from './components/UserAdmin';
@@ -68,7 +67,7 @@ function App() {
             exact
             path="/ProductPage/:id"
             render={(props) =>
-              <ProductViewDetail />
+              <ProductDetail />
             } />
 
           <Route
