@@ -4,7 +4,7 @@ const port = 5000;
 const cors = require('cors');
 const { MongoClient } = require('mongodb');
 const mongoose = require('mongoose');
-const keys = require('./config/keys');
+const keys = require('./config/keys.js');
 
 
 const productRouter = require('./routes/productRouter');

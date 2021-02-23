@@ -1,10 +1,6 @@
 import React from 'react';
 
-
-
-
 const UploadProduct = () => {
-
     return (
         <form>
             <body /*action="/action_page.php"*/>
@@ -18,9 +14,6 @@ const UploadProduct = () => {
                     <p>price: </p>
                     <p>quality</p>
                 </div>
-                
-            
-           
             </body>
         </form>
        
