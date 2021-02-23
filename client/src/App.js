@@ -1,11 +1,9 @@
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import AuthNav from "./components/auth-nav";
-import Login from './components/LoginBar';
 import Header from './components/Header';
 import Main from './components/Main';
 import Footer from './components/Footer';
 import SearchBar from './components/SearchBar';
-import SignUp from './components/SignUp';
 import React from 'react';
 import About from './components/About';
 import Profile from './components/Profile';
@@ -32,12 +30,7 @@ function App() {
 
             </div>
           </Route>
-          <Route
-            exact
-            path="/signup"
-            render={(props) =>
-              <SignUp />
-            } />
+   
           <Route exact path="/UploadProduct"
             render={(props) =>
               <UploadProduct />}
@@ -47,11 +40,6 @@ function App() {
           <Route exact path="/UserAdmin"
             render={(props) =>
               <UserAdmin />}
-          />
-
-          <Route exact path="/login"
-            render={(props) =>
-              <Login />}
           />
 
           <Route exact path="/about"
