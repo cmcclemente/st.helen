@@ -1,25 +1,34 @@
 const express = require('express');
 const productsRouter = express.Router();
 
-const mockData = require('../data/mockData');
+
+
+const productsController = require('../controllers/productsController');
+const Product = require('../models/Product');
+
 
 productsRouter.route('/')
 .get((req, res, next) => {
-    res.send(mockData.productList);
-})
-.post((req, res, next) => {
-    next("An error");
+    Product.find({}, (err, products) => {
+        if (err) {
+        next(err);
+      } else {
+        res.send(products);
+      }    
 });
+    });
 
-/*productsRouter.route('/:id')
-.get((req, res, next) => { 
-    res.sendStatus(501);
-});
-.put(req, res, next) => { 
-    res.sendStatus(501);
-});
-.delete(req, res, next) => { 
-    res.sendStatus(501);
-});*/
+productsRouter.route('/:id')
+  .get((req, res, next) => {
+    Product.findOne({id:req.params.id}, (err, product) => {
+      if (err) {
+        next(err);
+      } else if (product) {
+        res.send(product);
+      } else {
+        res.sendStatus(404);
+      }
+    });
+  });
 
 module.exports = productsRouter;

@@ -15,7 +15,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function Event(props) {
+export default function Product(props) {
   const classes = useStyles();
   return (
     <Card className={classes.root}>

@@ -1,19 +1,17 @@
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
-
-import Login from './components/LoginBar';
+import AuthNav from "./components/auth-nav";
 import Header from './components/Header';
 import Main from './components/Main';
 import Footer from './components/Footer';
 import SearchBar from './components/SearchBar';
-import SignUp from './components/SignUp';
 import React from 'react';
 import About from './components/About';
 import Profile from './components/Profile';
-import ProductPage from './components/ProductPage';
+import ProductDetail from './components/Products/ProductDetail';
 import ChatPage from './components/ChatPage';
 import UserAdmin from './components/UserAdmin';
 import UploadProduct from './components/UploadProduct';
-
+import ProtectedRoute from './auth/protected-route';
 
 function App() {
   return (
@@ -32,12 +30,7 @@ function App() {
 
             </div>
           </Route>
-          <Route
-            exact
-            path="/signup"
-            render={(props) =>
-              <SignUp />
-            } />
+   
           <Route exact path="/UploadProduct"
             render={(props) =>
               <UploadProduct />}
@@ -49,26 +42,20 @@ function App() {
               <UserAdmin />}
           />
 
-          <Route exact path="/login"
-            render={(props) =>
-              <Login />}
-          />
-
           <Route exact path="/about"
             render={(props) =>
               <About />}
           />
 
-          <Route exact path="/profile"
-            render={(props) =>
-              <Profile />}
+          <ProtectedRoute exact path="/profile"
+            component={Profile}
           />
 
           <Route
             exact
             path="/ProductPage/:id"
             render={(props) =>
-              <ProductPage />
+              <ProductDetail />
             } />
 
           <Route
@@ -77,8 +64,11 @@ function App() {
             render={(props) =>
               <ChatPage />
             } />
+            
         </Switch>
+        
       </BrowserRouter>
+      <AuthNav />
     </div>
   );
 }
