@@ -1,3 +1,4 @@
+import React from 'react';
 import ProductProvider from "./Products/ProductProvider"
 
 const Main = () => {
