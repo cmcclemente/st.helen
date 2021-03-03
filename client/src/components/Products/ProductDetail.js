@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { useParams } from 'react-router-dom';
-import { Grid, Typography, makeStyles, Button } from '@material-ui/core';
-import ProductView from './Product';
+import { Grid, Typography, makeStyles } from '@material-ui/core';
+
 
 const useStyles = makeStyles({
   root: {
