@@ -1,4 +1,6 @@
 import React from 'react';
+import Header from './Header';
+import Footer from './Footer';
 
 class ChatPage extends React.Component {
     constructor(props){
@@ -18,6 +20,7 @@ class ChatPage extends React.Component {
     const {userValue} = this.state;    
     return (
        <div>
+            <Header />
             <div className="bodyChat">
                 <h2 className="center">Chat page</h2>
                 <div className= "containerChat">
@@ -35,6 +38,7 @@ class ChatPage extends React.Component {
                     <button onClick={this.myFunction}>Send</button>
                 </div>                  
             </div>
+            <Footer/>
         </div>
     )}       
 }

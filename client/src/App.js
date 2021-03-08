@@ -1,9 +1,7 @@
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
-import AuthNav from "./components/auth-nav";
 import Header from './components/Header';
 import Main from './components/Main';
 import Footer from './components/Footer';
-import SearchBar from './components/SearchBar';
 import React from 'react';
 import About from './components/About';
 import Profile from './components/Profile';
@@ -16,9 +14,7 @@ import ProtectedRoute from './auth/protected-route';
 function App() {
   return (
     <div>
-      <span>
-        <SearchBar />
-      </span>
+      
       <BrowserRouter>
         <Switch>
           <Route exact path="/">
@@ -68,7 +64,7 @@ function App() {
         </Switch>
         
       </BrowserRouter>
-      <AuthNav />
+      
     </div>
   );
 }

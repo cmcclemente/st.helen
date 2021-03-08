@@ -35,3 +35,25 @@
   
   .dropdown a:hover {background-color: #ddd;}
   .show {display: block;}
+
+#searchbar {
+    height:1200px;
+}
+
+#navigation li{
+   float: left;
+    list-style-type: none;
+    width: 15%;
+    text-align: center;
+    position: relative;
+    margin-top:10px;
+}
+
+#navigation a{
+    text-decoration:none;
+    color:black;
+}
+#navigation {
+    width:2000px;
+}
+
