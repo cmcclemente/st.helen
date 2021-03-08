@@ -2,7 +2,6 @@ const Products = require('../models/Product');
 
 exports.createEvent = (req, res, next) => {
   const {
-    id,
     name,
     price,
     available,
@@ -10,7 +9,6 @@ exports.createEvent = (req, res, next) => {
 
 
   const product = {
-    id: req.body.id,
     name: req.body.name,
     price: req.body.price,
     available: req.body.available,  
