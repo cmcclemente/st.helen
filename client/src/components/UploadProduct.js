@@ -1,22 +1,57 @@
 import React from 'react';
+import Header from './Header';
+import Footer from './Footer';
+import FileUploader from './Upload/FileUploader';
+import {Button, makeStyles} from '@material-ui/core';
 
-const UploadProduct = () => {
+const useStyles = makeStyles((theme) => ({
+  root: {
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+    width: '50vw',
+  },
+  formControl: {
+    margin: theme.spacing(1),
+  },
+  title: {
+    margin: theme.spacing(1),
+  },
+  dateRow: {
+    display: 'flex',
+    width: '100%',
+    flexDirection: 'row',
+    justifyContent: 'flex-start',
+  },
+}));
+
+function UploadProduct() {
+    const classes = useStyles();
     return (
-        <form>
-            <body /*action="/action_page.php"*/>
-                <h1 class="center">Upload A Product to Sell</h1>
-                
-                <input class="center" type="file" id="myFile" name="filename"/>
-                <input class="center"type="submit"/>
-            
-                <div className="center">
-                    <p>Description</p>
-                    <p>price: </p>
-                    <p>quality</p>
-                </div>
-            </body>
-        </form>
-       
+        <div>
+            <Header />
+            <form>
+                <body>
+                    <h1>Upload A Product to Sell</h1>
+                    <FileUploader />
+                    <Button
+                        variant="contained"
+                        color="primary"
+                        type="submit"
+                        className={classes.formControl}
+                        form="eventCreateForm"
+                        >
+                        Submit
+                    </Button>
+                    <div className="center">
+                        <p>Description</p>
+                        <p>price: </p>
+                        <p>quality</p>
+                    </div>
+                </body>
+            </form>
+            <Footer />
+        </div>
       );
 }
 

@@ -18,25 +18,28 @@ code {
 }
 
 #header {
-  background: #ccc;
-  height: 100px;
+    background: #ccc;
+    height: 100px;
 }
 
+
 #signin{
-  float:right;
-  display:flex;
+    float:right;
+    display:flex;
 }
 
 .container{
-  display:flex;
-  justify-content: space-between;
+    display:flex;
+    justify-content: space-between;
 
 }
 
 
 
 #searchBar {
-  margin-left: 415px; /* Same as 'nav' width */
+    margin-top: 20px;
+    margin-left: 0px; /* Same as 'nav' width */
+    height:50px;
 }
 
 .row{
