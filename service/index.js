@@ -10,6 +10,7 @@ const keys = require('./config/keys.js');
 const productRouter = require('./routes/productRouter');
 const profileRouter = require('./routes/profileRouter');
 const transactionRouter = require('./routes/transactionRouter');
+const uploadsRouter = require('./routes/uploadsRouter');
 
 
 const logger = (req, res, next) => {
@@ -35,9 +36,12 @@ db.on('close', () => { console.log('MongoDB connection closed'); });
 app.use(logger, express.json());
 app.use(cors());
 
+app.use('/img', express.static('resources/images'));
+
 app.use('/api/v1/products', productRouter);
 app.use('/api/v1/profiles', profileRouter);
 app.use('/api/v1/transactions', transactionRouter);
+app.use('/api/v1/uploads', uploadsRouter);
 
 app.listen(port, () => {
     console.log(`Server started on port ${port}...`);
