@@ -17,7 +17,7 @@ const classes = useStyles();
     <div className={classes.root}>
     <Grid container item direction="row" spacing={1}>
       {props.products.map((product) => (
-        <Grid key={product.id} item xs={2}>
+        <Grid key={product.id} item xs={4}>
           <Product product={product} />
         </Grid>
       ))}

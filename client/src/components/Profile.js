@@ -14,8 +14,9 @@ const Profile = () => {
                     <p className="price">Items Sold:  <br />Purchases: </p>
                     <p>The Users Bio if they choose to have one</p>
                     <p><button>Report(for removeal)</button></p>
+                    <div><Map /></div>
                 </div>
-            <div style={{display: 'flex',  justifyContent:'center', alignItems:'center', height: '100vh'}}><Map /></div>    
+            <div style={{display: 'flex',  justifyContent:'center', alignItems:'center', height: '100vh'}}></div>    
             
             {JSON.stringify(user, null, 2)}
         </form>

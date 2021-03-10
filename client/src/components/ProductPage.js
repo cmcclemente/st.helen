@@ -1,4 +1,5 @@
 import React from 'react';
+import map from './mapsAPI/maps';
 
 const ProductPage = () => {
     return (
@@ -12,6 +13,7 @@ const ProductPage = () => {
                     <a href="/profile">Sellers Profile</a>
                     <p>This is where I would hypothetically describe the said item and try to convince people to give their hard earned money to buy it, by spitting out a bunch of fancy shiny words at them. YAYYYY!!!</p>
                     <p><button>Add to Cart</button></p>
+                    {/*<p><map /></p>*/}
                 </div>
             </body>
         </form>
