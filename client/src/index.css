@@ -45,7 +45,7 @@ code {
 .row{
     height:900px;
     width:940px;
-    background-color:aqua;
+    background-color:rgb(255, 0, 0);
 
     margin:0 auto;
 }
@@ -65,7 +65,7 @@ main {
 
 #content {
     width: 580px;
-    background: #2175fc;
+    background: #ffffff;
     height: 800px;
     float: right;
     padding: 10px;
@@ -87,7 +87,7 @@ main {
 .innertube {
     float:left;
     width: 340px;
-    background: #2175fc;
+    background: #ffffff;
     padding: 10px;    
     margin-top:5px;
     margin-left:5px;
