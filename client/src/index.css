@@ -12,6 +12,12 @@ body {
     margin:0;
     box-sizing: border-box;
 }
+
+.App{
+    background-color:#F0B067;
+    
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
@@ -43,9 +49,9 @@ code {
 }
 
 .row{
-    height:900px;
+    height:1125px;
     width:940px;
-    background-color:rgb(255, 0, 0);
+    background-color:#773B39;
 
     margin:0 auto;
 }
@@ -65,7 +71,7 @@ main {
 
 #content {
     width: 580px;
-    background: #ffffff;
+    background: #F0B067;
     height: 800px;
     float: right;
     padding: 10px;
@@ -87,7 +93,7 @@ main {
 .innertube {
     float:left;
     width: 340px;
-    background: #ffffff;
+    background: #773B39;
     padding: 10px;    
     margin-top:5px;
     margin-left:5px;
