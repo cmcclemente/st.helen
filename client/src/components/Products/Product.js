@@ -10,9 +10,9 @@ import { Link } from 'react-router-dom';
 const useStyles = makeStyles((theme) => ({
   root: {
     padding: '0',
-    background: '#773B39',
+    background: 'white',
     display:'block',
-    color:'#F0B067',
+    color:'black',
     textDecoration:'none',
   },
 }));

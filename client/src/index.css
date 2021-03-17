@@ -14,7 +14,7 @@ body {
 }
 
 .App{
-    background-color:#F0B067;
+    background-color:black;
     
 }
 
@@ -24,7 +24,7 @@ code {
 }
 
 #header {
-    background: #ccc;
+    background-color: white;
     height: 100px;
 }
 
@@ -51,7 +51,7 @@ code {
 .row{
     height:1125px;
     width:940px;
-    background-color:#773B39;
+    background-color:black;
 
     margin:0 auto;
 }
@@ -71,7 +71,7 @@ main {
 
 #content {
     width: 580px;
-    background: #F0B067;
+    background: red;
     height: 800px;
     float: right;
     padding: 10px;
@@ -84,7 +84,7 @@ main {
 #footer {
   clear: left;
   width: 100%;
-  background: #ccc;
+  background: white;
   text-align: center;
   padding: 4px 0;
 }
@@ -93,7 +93,7 @@ main {
 .innertube {
     float:left;
     width: 340px;
-    background: #773B39;
+    background: red;
     padding: 10px;    
     margin-top:5px;
     margin-left:5px;
@@ -101,7 +101,7 @@ main {
 }
 
 .foot {
-    background: #ccc;
+    background: white;
     height: 50px;
     line-height: 50px;
     margin-bottom: 10px;
