@@ -10,7 +10,7 @@ import { Link } from 'react-router-dom';
 const useStyles = makeStyles((theme) => ({
   root: {
     padding: '0',
-    background: 'yellow',
+    background: 'rgb(248,248,255)',
     display:'block',
   },
 }));

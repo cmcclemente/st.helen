@@ -7,7 +7,7 @@ import ProductList from "./ProductList";
 const useStyles = makeStyles((theme) => ({
     root: {
         flexGrow:1,
-        color: 'yellow',
+        color: 'Black',
         width:'560px',
         height:'780px',
     },
