@@ -6,7 +6,7 @@ import Product from "./Product";
 const useStyles = makeStyles((theme) => ({
     root: {
         
-        color: '#773B39',
+        color: 'white',
         width:'560px',
         height:'760px',
     }

@@ -11,7 +11,7 @@ const useStyles = makeStyles((theme) => ({
   root: {
     padding: '0',
 
-    background: 'red',
+    background: 'white',
 
     display:'block',
     color:'black',

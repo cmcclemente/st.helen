@@ -24,7 +24,7 @@ code {
 }
 
 #header {
-    background: white;
+    background-color: white;
     height: 100px;
 }
 
@@ -51,10 +51,9 @@ code {
 .row{
     height:1125px;
     width:940px;
-    background-color:red;
+    background-color:black;
+
     margin:0 auto;
-    margin-top: 10px;
-    margin-bottom:5px;
 }
 
 main {
@@ -72,8 +71,8 @@ main {
 
 #content {
     width: 580px;
-    background: white;
-    height: 1100px;
+    background: red;
+    height: 800px;
     float: right;
     padding: 10px;
     text-align: justify;
@@ -85,7 +84,7 @@ main {
 #footer {
   clear: left;
   width: 100%;
-  background: #ccc;
+  background: white;
   text-align: center;
   padding: 4px 0;
 }
@@ -94,11 +93,11 @@ main {
 .innertube {
     float:left;
     width: 340px;
-    background: white;
+    background: red;
     padding: 10px;    
     margin-top:5px;
     margin-left:5px;
-    height: 1100px;
+    height: 800px;
 }
 
 .foot {
