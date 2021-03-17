@@ -7,8 +7,8 @@ import ProductList from "./ProductList";
 const useStyles = makeStyles((theme) => ({
     root: {
         flexGrow:1,
- 
-        color: 'Black',
+
+        color: 'black',
 
         width:'560px',
         height:'780px',

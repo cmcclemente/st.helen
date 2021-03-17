@@ -11,10 +11,10 @@ const useStyles = makeStyles((theme) => ({
   root: {
     padding: '0',
 
-    background: 'rgb(248,248,255)',
+    background: 'white',
 
     display:'block',
-    color:'#F0B067',
+    color:'black',
     textDecoration:'none',
   },
 }));
