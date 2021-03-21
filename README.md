@@ -8,7 +8,7 @@ website as seen here: https://offerup.com/.
 * Christopher Clemente
 * Jeffrey Wicorek
 * Cathal Mullen
-### Former Memeber
+###### Former Member(s)
 * Christain Gunning
 
 ## Our Application Features intail:
