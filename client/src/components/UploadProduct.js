@@ -2,7 +2,7 @@ import React from 'react';
 import Header from './Header';
 import Footer from './Footer';
 import FileUploader from './Upload/FileUploader';
-import {Button, makeStyles} from '@material-ui/core';
+import {makeStyles} from '@material-ui/core';
 
 const useStyles = makeStyles((theme) => ({
     root: {

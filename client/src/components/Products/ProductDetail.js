@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { useParams } from 'react-router-dom';
-import { Card, Typography, makeStyles, CardContent, CardActions } from '@material-ui/core';
+import { Card, Typography, makeStyles, CardContent} from '@material-ui/core';
 
 
 const useStyles = makeStyles({

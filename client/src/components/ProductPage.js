@@ -15,7 +15,7 @@ const ProductPage = () => {
                     <ProductDetail />
                     
                     <p><button>Add to Cart</button></p>
-                    {/*<p><map /></p>*/}
+                    <p><map /></p>
                     
                 </div>
                 <Footer />
