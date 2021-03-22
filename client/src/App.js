@@ -10,6 +10,7 @@ import ChatPage from './components/ChatPage';
 import UserAdmin from './components/UserAdmin';
 import UploadProduct from './components/UploadProduct';
 import ProtectedRoute from './auth/protected-route';
+import ProductPage from './components/ProductPage';
 
 function App() {
   return (
@@ -51,7 +52,7 @@ function App() {
             exact
             path="/ProductPage/:id"
             render={(props) =>
-              <ProductDetail />
+              <ProductPage />
             } />
 
           <Route

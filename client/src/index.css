@@ -71,7 +71,7 @@ main {
 
 #content {
     width: 580px;
-    background: red;
+    background: #ee6565;
     height: 800px;
     float: right;
     padding: 10px;
@@ -93,7 +93,7 @@ main {
 .innertube {
     float:left;
     width: 340px;
-    background: red;
+    background: #ee6565;
     padding: 10px;    
     margin-top:5px;
     margin-left:5px;
