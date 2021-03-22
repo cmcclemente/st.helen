@@ -27,7 +27,7 @@ export default function Product(props) {
         <CardContent>
           <h2>{props.product.name}</h2>
           <p>{props.product.price}</p>
-          <Link to={`/ProductPage/${props.product.id}`}>View Item</Link>
+          <Link to={`/ProductPage/${props.product._id}`}>View Item</Link>
         </CardContent>
       </CardActionArea>
     </Card>

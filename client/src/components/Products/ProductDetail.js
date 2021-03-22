@@ -1,17 +1,29 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { useParams } from 'react-router-dom';
-import { Grid, Typography, makeStyles } from '@material-ui/core';
+import { Card, Typography, makeStyles, CardContent} from '@material-ui/core';
 
 
 const useStyles = makeStyles({
-  root: {
-    display: 'flex',
-    justifyContent: 'space-around',
-    width: '50vw',
+    root: {
+        display: 'flex',
+        justifyContent: 'space-around',
+        width: '50vw',
+        minWidth: 275,  
+    },
+    bullet: {
+        display: 'inline-block',
+        margin: '0 2px',
+        transform: 'scale(0.8)',
+    },
+    featureImage: {
+        width: '15vw',
+    },
+    title: {
+    fontSize: 14,
   },
-  featureImage: {
-    width: '15vw',
+    pos: {
+    marginBottom: 12,
   },
 });
 
@@ -34,27 +46,25 @@ export default function ProductDetail(props) {
   }, [id]);
 
     if (product) {
-      return (
-                  <Grid container item className={classes.root}>
-          <Grid container item className={classes.root} direction="row">
-            <Grid item>
-              
-            </Grid>
-            <Grid item>
-              <Typography variant="h3">
-                {product.name}
-              </Typography>
-              <Typography>
-                {product.price}
-              </Typography>
-              <Typography>
-                {product.available}
-              </Typography>
-            </Grid>
-          </Grid>
-          
-        </Grid>
-        );
+      return (               
+             
+             <Card className={classes.root}>
+      <CardContent>
+        
+        <Typography variant="h5" component="h2">
+          {product.name} 
+        </Typography>
+        <Typography className={classes.pos} color="textSecondary">
+          {product.price}
+        </Typography>
+        <Typography variant="body2" component="p">
+          <h3>Availabe: {product.available.toString()}</h3>
+          <br />
+        </Typography>
+      </CardContent>
+    
+    </Card>
+            );
     }
     return <div>Loading...</div>;
 }

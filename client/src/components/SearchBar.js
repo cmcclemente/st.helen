@@ -18,7 +18,6 @@ const SearchBar = ({ keyword, setKeyword }) => {
         onChange={(e) => setKeyword(e.target.value)}
       /></li>
         <li><Link to={`/ChatPage`}>Chat with Team</Link></li>
-        <li><Link to={`/about`}>About-us</Link></li>
         <li><Link to={`/UserAdmin`}>User-Control</Link></li>
         <li><Link to={`/UploadProduct`}>Upload Product</Link>  </li>
         <li><AuthNav /></li>

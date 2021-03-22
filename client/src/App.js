@@ -3,13 +3,12 @@ import Header from './components/Header';
 import Main from './components/Main';
 import Footer from './components/Footer';
 import React from 'react';
-import About from './components/About';
 import Profile from './components/Profile';
-import ProductDetail from './components/Products/ProductDetail';
 import ChatPage from './components/ChatPage';
 import UserAdmin from './components/UserAdmin';
 import UploadProduct from './components/UploadProduct';
 import ProtectedRoute from './auth/protected-route';
+import ProductPage from './components/ProductPage';
 
 function App() {
   return (
@@ -38,11 +37,6 @@ function App() {
               <UserAdmin />}
           />
 
-          <Route exact path="/about"
-            render={(props) =>
-              <About />}
-          />
-
           <ProtectedRoute exact path="/profile"
             component={Profile}
           />
@@ -51,7 +45,7 @@ function App() {
             exact
             path="/ProductPage/:id"
             render={(props) =>
-              <ProductDetail />
+              <ProductPage />
             } />
 
           <Route
