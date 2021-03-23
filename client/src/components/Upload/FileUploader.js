@@ -20,7 +20,7 @@ const validationRules = yup.object({
   name: yup.string('Product Name').required('Product name required'),
   available: yup
     .string('Available')
-    .oneOf(['True', 'False'], 'Must be a valid choice')
+    .oneOf(['true', 'false'], 'Must be a valid choice')
     .required('Available required'),
   description: yup.string('Description').required('Description required'),
   price: yup.string('Price').required('Price required'),
@@ -58,7 +58,6 @@ export default function FileUploader() {
   const [selectedFile, setSelectedFile] = useState(null);
   const [uploadProgress, setUploadProgress] = useState(0);
   const [error, setError] = useState(null);
-    
     const formik = useFormik({
     initialValues: {
       name: '',
@@ -67,11 +66,11 @@ export default function FileUploader() {
       available: '',
     },
     validationSchema: validationRules,
-    onSubmit: (values, {setSubmitting}) => {
+    onSubmit: (values) => {
       console.log('form values ', values);
       
       const requestConfig = {
-        url: 'http://localhost:5000/api/v1/products/',
+        url: 'http://localhost:5000/api/v1/products',
         method: 'post',
         headers: {
           'Content-Type': 'application/json',
@@ -95,7 +94,7 @@ export default function FileUploader() {
     });
     
   if (success) {
-    return <Redirect to="/event/submitted" />;
+    return <Redirect to="/" />;
   }
 
   if (error) {
@@ -189,8 +188,8 @@ export default function FileUploader() {
             <MenuItem value="">
               <em>None</em>
             </MenuItem>
-            <MenuItem value="True">True</MenuItem>
-            <MenuItem value="False">False</MenuItem>
+            <MenuItem value="true">True</MenuItem>
+            <MenuItem value="false">False</MenuItem>
           </Select>
         </FormControl>
       

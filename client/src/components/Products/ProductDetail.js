@@ -8,8 +8,8 @@ const useStyles = makeStyles({
     root: {
         display: 'flex',
         justifyContent: 'space-around',
-        width: '50vw',
-        minWidth: 275,  
+        width: 30,
+        minWidth: 300,  
     },
     bullet: {
         display: 'inline-block',
@@ -17,7 +17,7 @@ const useStyles = makeStyles({
         transform: 'scale(0.8)',
     },
     featureImage: {
-        width: '15vw',
+        width: '10vw',
     },
     title: {
     fontSize: 14,
