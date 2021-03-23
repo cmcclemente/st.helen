@@ -24,6 +24,7 @@ const validationRules = yup.object({
     .required('Available required'),
   description: yup.string('Description').required('Description required'),
   price: yup.string('Price').required('Price required'),
+  areaCode: yup.string('Area Code').required('Area Code required')
 });
 
 const useStyles = makeStyles((theme) => ({
@@ -64,6 +65,7 @@ export default function FileUploader() {
       description: '',
       price: '',
       available: '',
+      areaCode: '',
     },
     validationSchema: validationRules,
     onSubmit: (values) => {
@@ -81,6 +83,7 @@ export default function FileUploader() {
           description: values.description,
           price: values.price,
           available: values.available,
+          areaCode: values.areaCode,
         },
       };
         axios(requestConfig)
@@ -169,6 +172,18 @@ export default function FileUploader() {
           onChange={formik.handleChange}
           onBlur={formik.handleBlur}
           error={formik.touched.price && Boolean(formik.errors.price)}
+        />
+        <TextField
+          required
+          name="areaCode"
+          label="Area Code"
+          value={formik.values.areaCode}
+          variant="outlined"
+          className={classes.formControl}
+          fullWidth
+          onChange={formik.handleChange}
+          onBlur={formik.handleBlur}
+          error={formik.touched.areaCode && Boolean(formik.errors.areaCode)}
         />
         <FormControl
           fullWidth

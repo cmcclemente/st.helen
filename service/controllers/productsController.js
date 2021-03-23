@@ -4,6 +4,7 @@ exports.createEvent = (req, res, next) => {
   const {
     name,
     price,
+    areaCode,
     available,
   } = req.body;
 
@@ -11,6 +12,7 @@ exports.createEvent = (req, res, next) => {
   const product = {
     name: req.body.name,
     price: req.body.price,
+    areaCode: req.body.areaCode,
     available: req.body.available,  
   };
 
