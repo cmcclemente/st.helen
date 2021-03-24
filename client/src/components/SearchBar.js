@@ -20,6 +20,7 @@ const SearchBar = ({ keyword, setKeyword }) => {
         <li><Link to={`/ChatPage`}>Chat with Team</Link></li>
         <li><Link to={`/UserAdmin`}>User-Control</Link></li>
         <li><Link to={`/UploadProduct`}>Upload Product</Link>  </li>
+        <li><Link to={`/Profile`}>Profile</Link>  </li>
         <li><AuthNav /></li>
             </ul>
         </nav>

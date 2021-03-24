@@ -1,11 +1,25 @@
-.card {
+.carder {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    max-width: 300px;
+    max-width: 800px;
     margin: auto;
     text-align: center;
     font-family: arial;
+    background-color: #ee6565;
+    padding: 50px;
+    border: 5px solid gray;
   }
   
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 500px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+    color:#ccc;
+    padding: 50px;
+    background-color: white;
+  }
+
   .price {
     color: grey;
     font-size: 22px;
@@ -30,3 +44,4 @@
   .center {
       text-align: center;
   }
+

@@ -7,6 +7,8 @@ const mapStyles = {
   height: '400px'
 };
 
+
+
 export class MapContainer extends Component {
   render() {
     return (
@@ -21,13 +23,16 @@ export class MapContainer extends Component {
           }
         }>
 
-        <Marker 
-            name={'Template Marker'}/>
-        </Map>
+        <Marker
+          lat={this.props.lat}
+          lng={this.props.lng}
+          name={'Template Marker'}
+          label={{ fontWeight: 'bold', text: this.props.readable }} />
+      </Map>
     );
   }
 }
 
 export default GoogleApiWrapper({
-  apiKey:process.env.MAP_API_KEY
+  apiKey: "AIzaSyDFzSgTvi-yaCaA239rERW9zEXwLbz_7sw"//process.env.MAP_API_KEY
 })(MapContainer);

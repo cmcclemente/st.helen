@@ -7,20 +7,30 @@ import Footer from './Footer';
 
 const Profile = () => {
     const { user } = useAuth0();
-    const { name, picture} = user;
+    const { name, picture } = user;
     return (
-        <form >
-            <Header/>
+        <form style={{backgroundColor:'black'}}>
+            <Header />
+            <div >
+                <div className="carder">
                 <div className="card">
-                    <img src={picture} alt="User Profile" width="100%"/>
+                    <br />
+                    <img src={picture} alt="User Profile" width="100%" />
                     <h1>{name}</h1>
                     <p className="price">Items Sold:  <br />Purchases: </p>
-                    <p>The Users Bio if they choose to have one</p>
-                    <p><button>Report(for removeal)</button></p>
-                    <div><Map /></div>
+                    <p>I am a big rugby fan as well as cycling</p>
+                    <br/>
+                    <p><button><strong>Report</strong></button></p>
+                    <br />
+                    <Map />
+                    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+                
                 </div>
-            <div style={{display: 'flex',  justifyContent:'center', alignItems:'center', height: '100vh'}}></div>    
-            
+                
+                </div>
+            </div>
+            <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh' }}></div>
+
             <Footer />
         </form>
         
