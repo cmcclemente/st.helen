@@ -17,19 +17,17 @@ You are then connected to the site.
 * Christian Gunning
 
 ## Our Application Features entail:
-* Buyers can browse items with one-line descriptions and images
+* Buyers can browse items with one-line descriptions
 * Buyers can look at item details
 * Buyers can send a message to the seller
 * Buyers can receive a message from the seller
-* Sellers can post items with descriptions, images, prices, and locations
-* Sellers can receive messages from Buyers
+* Sellers can post items with descriptions, images, prices
 * Sellers can send messages to Buyers
 * Sellers can see their item posting
 * Sellers can mark items as sold
 * Admins can view items
 * Admins can view seller and user details
 * Admins can add, delete, and edit items
-* Admins can edit and lock user and seller profiles
 
 ## The Application also satisfies these conditions:
 * The implementation of OAuth flow using Auth0
