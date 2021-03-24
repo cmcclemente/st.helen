@@ -12,7 +12,7 @@ import ProductPage from './components/ProductPage';
 
 function App() {
   return (
-    <div>
+    <div >
       
       <BrowserRouter>
         <Switch>
