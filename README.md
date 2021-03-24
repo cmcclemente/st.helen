@@ -1,8 +1,13 @@
 # St. Helens
+![image](https://user-images.githubusercontent.com/60242692/112396000-a7176280-8cbc-11eb-8484-19f93cef43dd.png)
 
 ## General Information
 As part of our class project our group are developing a clone of the OfferUp
 website as seen here: https://offerup.com/. 
+
+## How to Connect to our website
+Open up the terminal and use npm start in the service folder, then go to the client folder and use npm start again.
+You are then connected to the site.
 
 ## Our Team @St. Helens
 * Christopher Clemente
