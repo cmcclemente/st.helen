@@ -1,3 +1,7 @@
+#bod{
+    background:black;
+}
+
 .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     max-width: 800px;
@@ -16,7 +20,7 @@
     outline: 0;
     padding: 12px;
     color: white;
-    background-color: #000;
+    background-color: #ee6565;
     text-align: center;
     cursor: pointer;
     width: 100%;
@@ -28,5 +32,8 @@
   }
 
   .center {
+      margin-top:10px;
       text-align: center;
+      background:#ee6565;
+      width: auto;
   }
