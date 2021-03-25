@@ -15,9 +15,20 @@
     margin: auto;
     text-align: center;
     font-family: arial;
-    color:#ccc;
+    
     padding: 50px;
     background-color: white;
+  }
+
+ .card2 {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 500px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+    
+    padding: 50px;
+    
   }
 
   .price {
@@ -33,7 +44,7 @@
     background-color: #ee6565;
     text-align: center;
     cursor: pointer;
-    width: 100%;
+    width: 66%;
     font-size: 18px;
   }
   

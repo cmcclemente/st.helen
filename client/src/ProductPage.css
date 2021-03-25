@@ -2,20 +2,22 @@
     background:black;
 }
 
-.card {
+.card2 {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     max-width: 800px;
     margin: auto;
     text-align: center;
     font-family: arial;
-  }
+    width:100%;
+    min-width:350px;
+}
   
-  .price {
+.price {
     color: grey;
     font-size: 100px;
   }
   
-  .card button {
+  .card2 button {
     border: none;
     outline: 0;
     padding: 12px;
@@ -27,7 +29,7 @@
     font-size: 12px;
   }
   
-  .card button:hover {
+  .card2 button:hover {
     opacity: 0.7;
   }
 

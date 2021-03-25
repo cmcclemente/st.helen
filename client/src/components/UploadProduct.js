@@ -9,14 +9,13 @@ function UploadProduct() {
         <div>
             <Header />
            
-                <body>
-                    <h1>Upload A Product to Sell</h1>
-                    <FileUploader />
+               
+                    
                     
                     <div className="center">
-                        
+                    <FileUploader />
                     </div>
-                </body>
+                
            
             <Footer />
         </div>

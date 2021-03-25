@@ -8,7 +8,6 @@ const useStyles = makeStyles({
     root: {
         display: 'flex',
         justifyContent: 'space-around',
-        width: 30,
         minWidth: 300,  
     },
     bullet: {

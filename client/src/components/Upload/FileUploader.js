@@ -130,7 +130,8 @@ export default function FileUploader() {
     
   return (
     <div className={classes.root}>
-       <form
+      <h1>Upload A Product to Sell</h1>
+      <form
         className={classes.root}
         onSubmit={formik.handleSubmit}
         id="productCreateForm"
@@ -234,15 +235,7 @@ export default function FileUploader() {
           )
           : <div>Select a File</div>}
       </div>
-      <Button
-        variant="contained"
-        color="primary"
-        className={classes.imageUploader}
-        disabled={!selectedFile}
-        onClick={upload}
-      >
-        Upload
-      </Button>
+     
         
       <CircularProgress variant="determinate" value={uploadProgress} />
       { error
