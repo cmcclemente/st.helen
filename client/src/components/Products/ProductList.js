@@ -7,7 +7,7 @@ const useStyles = makeStyles((theme) => ({
     root: {
         
         color: 'white',
-        width:'560px',
+        width:'920px',
         height:'760px',
     }
 }));

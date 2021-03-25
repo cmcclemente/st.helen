@@ -70,10 +70,10 @@ main {
 }
 
 #content {
-    width: 580px;
+    width: 100%;
     background: #ee6565;
     height: 800px;
-    float: right;
+    
     padding: 10px;
     text-align: justify;
     padding:10px;
